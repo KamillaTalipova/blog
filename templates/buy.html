@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Оформить подписку
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm" >
+          <div class="card-header py-3">
+            <h4 class="row justify-content-md-center">Бесплатно</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="row justify-content-md-center">$0 в месяц</h1>
+            <ul type="disc">
+              <li>Базовый курс</li>
+              <li>Дневник настроения</li>
+              <li>Дыхательные техники</li>
+              <br>
+              <br>
+              <br>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Выбрать</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="row justify-content-md-center">Подписка</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="row justify-content-md-center">$7 в месяц</h1>
+            <ul type="disc" >
+              <li>Новые треки и курсы каждый месяц</li>
+              <li>Более 50 медитаций с сопровождением для концетрации, борьбы с тревогой и стрессом</li>
+              <li>Медитации для здорового крепкого сна</li>
+              <li>Экслюзивные музыкальные треки для раслабления и сна</li>
+              <li>Приложения для борьбы с тревогой</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Оформить подписку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

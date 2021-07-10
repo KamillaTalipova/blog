@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Стресс
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://image.flaticon.com/icons/png/512/4433/4433216.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="80%" height="80%" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Стресс</h1>
+        <p class="lead">
+            Научно доказано, что стресс сам по себе не так уж и страшен, если уметь с ним справляться.
+            Только благодаря непредвиденным ситуациям мы приобретаем необходимый опыт, учимся справляться с проблемами.
+            Сложно поверить, но именно эмоциональные переживания делают нашу жизнь разнообразной.
+            Однако постоянное пребывание в состоянии напряжения может привести к печальным последствиям –
+            психическим расстройствам и сбоям в работе жизненно важных систем организма.
+            Уменьшение и управление стрессом на самом деле в наших руках. Мы можем отпустить стресс через налаживание контакта с собой, наблюдая за
+            ощущуениями и успокаивая ум.
+        </p>
+
+
+        <div class="d-grid gap-2 py-3 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onClick="location.href='/store/buy'">Купить курс</button>
+        </div>
+      </div>
+    </div>
+ </div>
+
+{% endblock %}

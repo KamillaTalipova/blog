@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Базовый курс
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://image.flaticon.com/icons/png/512/4433/4433184.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="80%" height="80%" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Базовый курс</h1>
+        <p class="lead">С помощью данного курса вы научитесь необходимым медиативным техникам и выработаете полезную привычку медитировать.</p>
+
+            <audio controls style="width:100%;max-width:800px;">
+            <source src="https://music.yandex.ru/iframe/#track/20007918/3060154" type="audio/mp3">
+            </audio>
+            <audio controls style="width:100%;max-width:800px;">
+            <source src="/music/mark_bernes_-_zhuravli.mp3" type="audio/mp3">
+            </audio>
+            <audio controls style="width:100%;max-width:800px;">
+            <source src="/music/mark_bernes_-_zhuravli.mp3" type="audio/mp3">
+            </audio>
+            <audio controls style="width:100%;max-width:800px;">
+            <source src="/music/mark_bernes_-_zhuravli.mp3" type="audio/mp3">
+            </audio>
+            <audio controls style="width:100%;max-width:800px;">
+            <source src="/music/mark_bernes_-_zhuravli.mp3" type="audio/mp3">
+            </audio>
+        <div class="d-grid gap-2 py-3 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Скачать курс</button>
+        </div>
+      </div>
+    </div>
+ </div>
+
+{% endblock %}

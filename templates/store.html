@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Магазин
+{% endblock %}
+
+{% block body %}
+<div class="album py-1 bg-white">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://image.flaticon.com/icons/png/512/4891/4891277.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Базовый курс</h2></text></div></rect></img>
+            <div class="card-body">
+              <p class="card-text">Начните здесь! С помощью данного курса вы научитесь необходимым медиативным техникам и выработаете полезную привычку медитировать.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/store/principal'">Перейти к курсу</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://image.flaticon.com/icons/png/512/4891/4891238.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Стресс</h2></text></div></rect></img>
+            <div class="card-body">
+              <p class="card-text">Мы можем отпустить стресс через налаживание контакта с собой, наблюдая за ощущениями и успокаивая ум.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/store/stress'">Подробнее</button>
+                  <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/store/buy'">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="https://image.flaticon.com/icons/png/512/4891/4891338.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Спокойный сон</h2></text></div></rect></img>
+            <div class="card-body">
+              <p class="card-text">Практики и музыкальные треки для здорового и крепкого сна. Восстановите свой ресурс и ощутите себя обновленными.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                  <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/store/buy'">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://image.flaticon.com/icons/png/512/4891/4891131.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Гнев</h2></text></div></rect></img>
+            <div class="card-body">
+              <p class="card-text">Гнев-очень сильная эмоция. Заметить, ослабить и трансформировать гнев вполне возможно, это в наших силах.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                  <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/store/buy'">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://image.flaticon.com/icons/png/512/4891/4891186.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Тревога</h2></text></div></rect></img>
+            <div class="card-body">
+              <p class="card-text">В этой программе мы познакомимся с проявлениями тревоги и увидим ее скрытые причины.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                  <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/store/buy'">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://image.flaticon.com/icons/png/512/4433/4433174.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Принятие</h2></text></div></rect></img>
+            <div class="card-body">
+              <p class="card-text">В этой серии мы будем учиться принимать естественный ход событий и смягчать наше сопротивлении реальности.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                  <button type="button" class="btn btn-sm btn-outline-primary" >Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
