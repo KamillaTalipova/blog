@@ -1,15 +1,38 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, request, abort
 from data import db_session
-from data.user import User
+from data.user import User, News
 from data.registerForm import RegisterForm
 from data.loginForm import LoginForm
-from flask_login import LoginManager, login_user, logout_user, login_required
+from data.newsForm import NewsForm
+from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 db_session.global_init("db/blogs.sqlite")
 
 app=Flask(__name__)
 app.config['SECRET_KEY'] = 'my_secret_key'
 login_manager = LoginManager()
 login_manager.init_app(app)
+
+
+@app.route('/personal')
+def personal():
+    session = db_session.create_session()
+    news = session.query(News)
+    return render_template("personal.html", news=news)
+
+
+@app.route('/news', methods=['GET', 'POST'])
+def add_news():
+    form = NewsForm()
+    if form.validate_on_submit():
+        session = db_session.create_session()
+        news = News()
+        news.title = form.title.data
+        news.content = form.content.data
+        current_user.news.append(news)
+        session.merge(current_user)
+        session.commit()
+        return redirect('/personal')
+    return render_template('news.html', title='Добавление новости',form=form)
 
 
 @login_manager.user_loader
@@ -59,7 +82,7 @@ def logout():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
 @app.route('/store')

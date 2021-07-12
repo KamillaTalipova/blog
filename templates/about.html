@@ -17,7 +17,11 @@
               <p class="card-text">Чат-бот предлагает 18 «сессий», в ходе которых объясняет важность сна, физических упражнений и медитации в борьбе с психическими расстройствами.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                      {% if current_user.is_authenticated %}
+                          <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                          {% else %}
+                          <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/login'">Подробнее</button>
+                      {% endif %}
                 </div>
               </div>
             </div>
@@ -30,7 +34,11 @@
               <p class="card-text">«Дневник настроения» учит распознавать «ловушки сознания» и дает рекомендации о том, как не вестись на них. С помощью приложения вы научитесь анализировать свое настроение.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                      {% if current_user.is_authenticated %}
+                          <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                          {% else %}
+                          <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/login'">Подробнее</button>
+                      {% endif %}
                 </div>
               </div>
             </div>
@@ -38,12 +46,19 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <img src="https://image.flaticon.com/icons/png/512/4522/4522545.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Дыхательные техники</h2></text></div></rect></img>
+            <img src="https://image.flaticon.com/icons/png/512/4522/4522000.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="225" loading="lazy"><rect width="100%" height="100%" fill="#55595c"><div class="container"><text><h2>Форум</h2></text></div></rect></img>
             <div class="card-body">
-              <p class="card-text">Приложение было создано для обучения пользователей диафрагмальному дыханию, которое помогает успокоиться и унять расшалившиеся нервы.</p>
+              <p class="card-text">На нашем форуме вы можете поделиться своими интересными историями и обсудить их с другими пользовательями.</p>
+                <br>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-primary">Подробнее</button>
+                      {% if current_user.is_authenticated %}
+                          <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/news'">Написать</button>
+                          <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/personal'">Читать</button>
+                          {% else %}
+                          <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/login'">Написать</button>
+                          <button type="button" class="btn btn-sm btn-outline-primary" onClick="location.href='/login'">Читать</button>
+                      {% endif %}
                 </div>
               </div>
             </div>
